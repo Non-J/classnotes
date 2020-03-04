@@ -136,7 +136,7 @@ When $\omega_d>\omega_\text{natural frequency}$, the circuit is more inductive, 
 #### Power Consumption
 
 $$
-\begin{align*}    P&=I^2R=I_0^2\sin(\omega t)^2R	&& \text{The equation for power}\\    \bar{P}&=\frac{I_0^2R}{2}		&& \text{Average of }\sin(\omega t)^2\ \text{is}\ \frac{1}{2}\\    \bar{P}&=I_{rms}^2R=I_{rms}V_{rms}\cos(\phi)			&& rms\ \text{is root-mean-square where}\ I_{rms}=I_0/2, V_{rms}=V_0/2\end{align*}
+\begin{align*}    P&=I^2R=I_0^2\sin(\omega t)^2R	&& \text{The equation for power}\\    \bar{P}&=\frac{I_0^2R}{2}		&& \text{Average of }\sin(\omega t)^2\ \text{is}\ \frac{1}{2}\\    \bar{P}&=I_{rms}^2R=I_{rms}V_{rms}\cos(\phi)			&& rms\ \text{is root-mean-square where}\ I_{rms}=I_0/\sqrt{2}, V_{rms}=V_0/\sqrt{2}\end{align*}
 $$
 
 #### Transformer
