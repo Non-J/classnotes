@@ -33,7 +33,7 @@ $$
 \begin{align*}
     \vec\mu&=I\vec A					&& \text{Magnetic dipole moment}\\
     \vec\tau&=\vec\mu\times\vec B		&& \text{Torque on magnetic dipole}\\
-    U&=\vec\mu\cdot\vec B				&& \text{Magnetic dipole potential}
+    U&=-\vec\mu\cdot\vec B				&& \text{Magnetic dipole potential}
 \end{align*}
 $$
 
