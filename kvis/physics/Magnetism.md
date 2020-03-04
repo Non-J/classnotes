@@ -89,7 +89,6 @@ $$
 \omega=\frac{1}{\sqrt{LC}}
 $$
 
-
 #### RLC Circuit
 
 A circuit in which energy oscillates between the inductor and capacitor, but the energy transfer is damped by the resistor. However, EMF can be introduced into the circuit to make up for the energy lost due to the resistor.
@@ -104,15 +103,21 @@ where $\omega_d$ is the driving angular frequency which corresponds to the frequ
 
 ###### Resistive Load
 
+The resistive load acts to dissipate energy and prevent large build-up of current in the circuit.
+
 With only resistive load, the phase constant $\phi=0$, and $V_R=I_RR$
 
 ###### Capacitive Load
+
+The capacitive load acts similar to a spring in spring-mass system, and helps to bridge the current gap in AC circuit.
 
 With capacity load, define *capacitive reactance* as $X_C=1/\omega_dC$, and we get $V_C=I_CX_C$.
 
 The phase constant in this case is $\phi=-\pi/2$, i.e, the phase of current leads the phase of EMF.
 
 ###### Inductive Load
+
+The inductive load acts similar to a mass in spring-mass system, and helps to slow down the rate of change of current in the circuit.
 
 With inductive load, define *inductive reactance* as $X_L=\omega_dL$, and we get $V_L=I_LX_L$.
 
