@@ -13,8 +13,8 @@ $$
 Using *Biot-Savart Law*, the magnetic field due to current-carrying loop or short piece of current-carrying wire can be derived.
 $$
 \begin{align*}
-    B=\frac{\mu_0I}{2}\frac{R^2}{(R^2+Z^2)^{3/2}}		&& \text{Magnetic field due to current-carrying loop}\\
-    B=\frac{\mu_0I}{4\pi}\frac{2a}{R\sqrt{R^2+a^2}}		&& \text{Magnetic field due to current-carrying wire}
+    B&=\frac{\mu_0I}{2}\frac{R^2}{(R^2+Z^2)^{3/2}}		&& \text{Magnetic field due to current-carrying loop}\\
+    B&=\frac{\mu_0I}{4\pi}\frac{2a}{R\sqrt{R^2+a^2}}		&& \text{Magnetic field due to current-carrying wire}
 \end{align*}
 $$
 Magnetic field can also be computed using *Ampère's Law* in the case where current is static.
