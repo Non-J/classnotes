@@ -1,5 +1,9 @@
 # Magnetism
 
+[TOC]
+
+------
+
 ## Magnetic Field
 
 Magnetic field is closed loop.
@@ -145,5 +149,3 @@ The proportion of the number of coil is equal to the proportion of voltage, but 
 $$
 \frac{N_1}{N_2}=\frac{V_1}{V_2}=\frac{I_2}{I_1}
 $$
-
-## 
