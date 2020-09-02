@@ -1,4 +1,4 @@
-# Electromagnetic Waves Worksheet 2
+# Electromagnetic Waves Worksheet 3, 4
 
 **Jirawut Thongraar**
 
