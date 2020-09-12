@@ -13,7 +13,7 @@ A **Vector Space** is any set of objects that satisfy the following constraints.
 | Commutativity of Addition                      | $v+u=u+v$                                                    |
 | Identity Element of Addition                   | $v+\vec{0}=v$                                                |
 | Inverse Elements of Addition                   | $v+(-v)=\vec{0}$                                             |
-| Closure of Scalar Multiplication               | $\operatorname{operator}\cdot(v:\text{Vector},k:\text{Scalar}):\text{Vector}$ |
+| Closure of Scalar Multiplication               | $\operatorname{operator}\cdot(k:\text{Scalar},v:\text{Vector}):\text{Vector}$ |
 | Scalar Distributivity of Scalar Multiplication | $k\cdot(v+u)=k\cdot v+k\cdot u$                              |
 | Vector Distributivity of Scalar Multiplication | $(k_1+k_2)\cdot v=k_1\cdot v+k_2\cdot v$                     |
 | Compatibility of Scalar Multiplication         | $k_1\cdot(k_2\cdot v)=(k_1\cdot k_2)\cdot v$                 |
@@ -59,7 +59,7 @@ Consider a set of vector $S$; if there exists multiple non-trivial paths that ma
 
 > **Wronskian and Linear Dependency of Functions**
 >
-> Functions - which satisfy the requirements of a vector space - are linearly dependent exactly when they can be expressed as linear combination of other functions. As in one of the function can be defined as linear combination of the others. 
+> Functions - a type which satisfy the requirements of a vector space - are linearly dependent exactly when they can be expressed as linear combination of other functions. As in one of the function can be defined as linear combination of the others. 
 >
 > One way to check is to evaluate the functions at various positions.
 > $$
@@ -68,7 +68,7 @@ Consider a set of vector $S$; if there exists multiple non-trivial paths that ma
 > \vdots\\
 > k_1f_1(x_n)+k_2f_2(x_n)+\dots+k_nf_n(x_n)=0\\
 > $$
-> If, for all values of $x$, there exists non-trivial solution of $k_1,k_2,\dots,k_n$, then the set of functions is linearly dependent.
+> If there exists non-trivial solution of $k_1,k_2,\dots,k_n$, then the set of functions is linearly dependent.
 >
 > Another way to check is by using derivations of the functions, evaluated at the same value of $x$:
 > $$
@@ -91,7 +91,7 @@ Consider a set of vector $S$; if there exists multiple non-trivial paths that ma
 >
 > Wronskian for a set of (n-1)-differentiable functions is defined as follows:
 > $$
-> W(x)=\operatorname{det}\left(
+> W(x)=\det\left(
 > \begin{bmatrix}
 > f_1(x) & f_2(x) & \dots & f_n(x)\\
 > f_1'(x)& f_2'(x)& \dots & f_n'(x)\\
@@ -102,7 +102,7 @@ Consider a set of vector $S$; if there exists multiple non-trivial paths that ma
 > $$
 > Linearly independent means that there exists a value of $x$ such that no function is expressible as linear combination of the others. From the above homogeneous linear system, we wanted to know if there exists a value of $x$ such that the only solution of $k$ is $\vec{0}$. That means that if there exists $x$ such that $W(x)\ne0$, then the functions are linearly independent.
 
-A set of vector $S$ is a **basis** for vector space $V$ if $S$ is linearly independent and $\text{span}(S)=V$.
+A set of vector $S$ is a **basis** for vector space $V$ if $S$ is linearly independent and $\operatorname{span}(S)=V$.
 
 For every vector, its linear combination expression of basis vectors is unique and is called **coordinates**.
 
@@ -112,7 +112,7 @@ For every vector, its linear combination expression of basis vectors is unique a
 >
 > If the size of a set of vectors is larger than dimension size, then it is linearly dependent; if it is smaller, then it doesn’t span the full vector space.  
 >
-> If a set of vectors where its size is equal to the dimension size, then it is a basis exactly when it is linearly independent or it span the full vector space.
+> If the size of a set of vectors size is equal to the dimension size, then it is a basis exactly when it is linearly independent or it span the full vector space.
 >
 > If $W$ is a subspace of vector space $V$, then $W=V$ exactly when $\dim(W)=\dim(V)$.
 >
