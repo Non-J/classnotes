@@ -1,0 +1,154 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{multicol}
+\newcommand{\im}{{i\mkern1mu}}
+
+%opening
+\title{Mathematics: Precalculus 2 Summary}
+\author{Jirawut Thongraar}
+
+\begin{document}
+
+\maketitle
+
+\section{Basic Formulas of Trigonometry}
+
+\subsection{Pythagorean Identities}
+$$\sin^2\theta+\cos^2\theta=1$$
+
+\subsection{Cofunction Identities}
+\begin{multicols}{2}
+	$$\sin(\frac{\pi}{2}-\theta)=\cos\theta$$
+	$$\tan(\frac{\pi}{2}-\theta)=\cot\theta$$
+	$$\sec(\frac{\pi}{2}-\theta)=\csc\theta$$
+	
+	$$\cos(\frac{\pi}{2}-\theta)=\sin\theta$$
+	$$\cot(\frac{\pi}{2}-\theta)=\tan\theta$$
+	$$\csc(\frac{\pi}{2}-\theta)=\sec\theta$$
+\end{multicols}
+
+\subsection{Negative Angle Identities}
+$$\sin(-\theta)=-\sin\theta$$
+$$\cos(-\theta)=\cos\theta$$
+$$\tan(-\theta)=-\tan\theta$$
+
+\subsection{Sum and Difference Formulas}
+$$\sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta$$
+$$\sin(\alpha-\beta)=\sin\alpha\cos\beta-\cos\alpha\sin\beta$$
+$$\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta$$
+$$\cos(\alpha-\beta)=\cos\alpha\cos\beta+\sin\alpha\sin\beta$$
+
+\subsection{Double Angle Formulas}
+$$\sin(2\theta)=2\sin\theta\cos\theta$$
+$$\cos(2\theta)=\cos^2\theta-\sin^2\theta$$
+
+\section{Derivation of Trigonometric Identities}
+
+\subsection{Sum and Difference Formulas of Tangent and Cotangent}
+From tangent identity, we get
+\begin{align*}
+	\tan(\alpha+\beta)&=\frac{\sin(\alpha+\beta)}{\cos(\alpha+\beta)} \\
+	&=\frac{\sin\alpha\cos\beta+\cos\alpha\sin\beta}{\cos\alpha\cos\beta-\sin\alpha\sin\beta}
+	\intertext{Dividing both numerator and denominator by $\cos\alpha\cos\beta$, we get}
+	\tan(\alpha+\beta)&=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}
+\end{align*}
+Similar process can be done to obtain $\cot(\alpha+\beta)$. $\sin\alpha\sin\beta$ is used to divide numerator and denominator instead.
+
+\subsection{Multiple Angle Formulas}
+Derivation of Multiple Angle Formulas utilize lower multiple angle formulas.
+$$\sin3\theta=\sin(2\theta+\theta)=3\sin\theta-4\sin^3\theta$$
+$$\cos3\theta=\cos(2\theta+\theta)=4\cos^3\theta-3\cos\theta$$
+This process can be done for higher multiple angle formulas.
+
+\subsection{Power Reducing Formulas}
+Take the double angle cosine formula
+$$\cos(2\theta)=\cos^2\theta-\sin^2\theta$$
+From Pythagorean Identities, substitute $\sin^2\theta$ and $\cos^2\theta$, we get
+\begin{multicols}{2}
+	$$\cos(2\theta)=\cos^2\theta-(1-\cos^2\theta)$$
+	$$\cos^2\theta=\frac{1+\cos(2\theta)}{2}$$
+	
+	$$\cos(2\theta)=(1-\sin^2\theta)-\sin^2\theta$$
+	$$\sin^2\theta=\frac{1-\cos(2\theta)}{2}$$
+\end{multicols}
+
+\subsection{Half Angle Formulas}
+Use Power Reducing Function on $\frac{\theta}{2}$, we get
+\begin{multicols}{2}
+	$$\sin^2\frac{\theta}{2}=\frac{1-\cos2(\frac{\theta}{2})}{2}$$
+	$$\sin\frac{\theta}{2}=\pm\sqrt{\frac{1-\cos2(\frac{\theta}{2})}{2}}$$
+	
+	$$\cos^2\frac{\theta}{2}=\frac{1+\cos2(\frac{\theta}{2})}{2}$$
+	$$\cos\frac{\theta}{2}=\pm\sqrt{\frac{1+\cos2(\frac{\theta}{2})}{2}}$$
+\end{multicols}
+Signs depended on the quadrant of $\frac{\theta}{2}$, which determines the sign of $\sin\frac{\theta}{2}$ and $\cos\frac{\theta}{2}$.
+
+\subsection{Product to Sum Formulas}
+These class of formulas can be derived via summation of Sum and Difference Formulas.
+\begin{align*}
+	\sin(\alpha+\beta)-\sin(\alpha-\beta)&=(\sin\alpha\cos\beta+\cos\alpha\sin\beta)-(\sin\alpha\cos\beta-\cos\alpha\sin\beta) \\
+	&=2\cos\alpha\sin\beta
+\end{align*}
+Similar process can be done to get other product to sum formulas.
+
+\subsection{Sum to Product Formulas}
+From $\sin(\alpha+\beta)-\sin(\alpha-\beta)=2\sin\alpha\cos\beta$, Let $\alpha+\beta=u$, $\alpha-\beta=v$, we get
+\begin{align*}
+	\sin(u)-\sin(v)&=\sin(\alpha+\beta)-\sin(\alpha-\beta) \\
+	&=2\cos(\frac{u+v}{2})\sin(\frac{u-v}{2})
+\end{align*}
+Similar process can be done to get other sum to product formulas.
+
+
+\section{Application of Trigonometries in Triangle}
+Let $ABC$ be triangle where $a, b, c$ are sides.\\
+Law of Sines.
+$$\frac{a}{\sin A} =\frac{b}{\sin B}=\frac{c}{\sin C} $$
+$$Area=\frac{1}{2}(base)(height)=\frac{1}{2}bc\sin A=\frac{1}{2}ac\sin B=\frac{1}{2}ab\sin C$$
+Law of Cosines.
+$$a^2=b^2+c^2-2bc\cos A$$
+$$b^2=a^2+c^2-2ac\cos B$$
+$$c^2=a^2+b^2-2ab\cos C$$
+Heron's Formula
+$$Area=\sqrt{s(s-a)(s-b)(s-c)}$$ where $s=\frac{a+b+c}{2}$
+
+
+\section{Application of Trigonometries in Complex Number}
+Let $z$ represents a complex number $a+b\im$
+$$z=a+b\im=(|z|cos\theta)+(|z|sin\theta)\im$$
+Multiplication and Division
+$$z_1z_2=|z_1||z_2|(cos(\theta_1+\theta_2)+sin(\theta_1+\theta_2)\im)$$
+$$\frac{z_1}{z_2}=\frac{|z_1|}{|z_2|}(cos(\theta_1-\theta_2)+sin(\theta_1-\theta_2)\im)$$
+Power and Root
+$$z^n=|z|^n(\cos n\theta+\sin n\theta \im)$$
+$$\sqrt[n]{z}=\sqrt[n]{|z|}(cos\frac{\theta+2\pi k}{n}+\sin(\frac{\theta+2\pi k}{n})\im)$$ for $k=0,1,...,n-1$
+
+
+\section{Vectors}
+Distance between $P_1=(x_1,y_1,z_2)$ and $P_2=(x_2,y_2,z_2)$ is
+$$\sqrt{(x_1-x_2)^2+(y_1-y_2)^2+(z_1-z_2)^2}$$
+
+\subsection{Dot Product}
+Let $a=\langle a_1,a_2,a_3\rangle$ and $b=\langle b_1,b_2,b_3\rangle$
+$$a\cdot b=a_1b_1+a_2b_2+a_3b_3=|a||b|\cos\theta$$
+We can project a vector $v$ on to direction of unit vector $e$ as
+$$\text{proj}_e v=(v\cdot e)e$$
+
+\subsection{Cross Product}
+Let $a=\langle a_1,a_2,a_3\rangle$ and $b=\langle b_1,b_2,b_3\rangle$
+$$a\times b=\begin{vmatrix}
+ i & j & k \\
+ a_1 & a_2 & a_3 \\
+ b_1 & b_2 & b_3
+\end{vmatrix}$$
+\\
+Let $a=\langle a_1,a_2,a_3\rangle$, $b=\langle b_1,b_2,b_3\rangle$, and $c=\langle c_1,c_2,c_3\rangle$
+$$a\cdot(b\times c)=\begin{vmatrix}
+a_1 & a_2 & a_3 \\
+b_1 & b_2 & b_3 \\
+c_1 & c_2 & c_3
+\end{vmatrix}$$
+The above value is also the volume of parallel shape formed by vector $a, b, c$
+
+\end{document}
