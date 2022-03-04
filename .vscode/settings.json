@@ -1,0 +1,17 @@
+{
+    "cSpell.words": [
+        "dendron",
+        "frontmatter",
+        "katex"
+    ],
+    "dendron.rootDir": ".",
+    "pasteImage.path": "${currentFileDir}/assets/images",
+    "pasteImage.prefix": "/",
+    "markdownlint.config": {
+        "default": true,
+    },
+    "editor.snippetSuggestions": "inline",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggest.showSnippets": true,
+    "editor.tabCompletion": "on"
+}
