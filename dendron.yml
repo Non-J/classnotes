@@ -22,6 +22,8 @@ commands:
 workspace:
     vaults:
         -
+            fsPath: korean
+        -
             fsPath: vault
     journal:
         dailyDomain: daily
@@ -101,3 +103,4 @@ publishing:
         action: useVault
         payload:
             - vault
+            - korean

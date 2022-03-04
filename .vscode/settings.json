@@ -2,13 +2,17 @@
     "cSpell.words": [
         "dendron",
         "frontmatter",
-        "katex"
+        "katex",
+        "hangeul",
     ],
     "dendron.rootDir": ".",
     "pasteImage.path": "${currentFileDir}/assets/images",
     "pasteImage.prefix": "/",
     "markdownlint.config": {
         "default": true,
+        "MD025": {
+            "front_matter_title": "",
+        },
     },
     "editor.snippetSuggestions": "inline",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
