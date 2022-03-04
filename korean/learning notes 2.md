@@ -26,6 +26,30 @@
 - 얼마 = How much (money)
 - 몇 = How many (used with counting unit)
 
+# Reference
+
+- 이것 = อันนี่
+- 그것 = อันนั่น
+- 저것 = อันโน่น
+- 여기 = ที่นี่
+- 저기 = ที่นั่น
+- 거기 = ที่โน่น
+
+# Time
+
+- 지금 = now
+- 요새, 요즘 = recently, nowadays
+- 매일 = everyday
+- 오늘 = today
+- 어제 = yesterday
+- 내일 = tomorrow
+
+# Scale
+
+- 조금 = little, a bit
+- 매우 = very
+- 너무 = too, so, overly
+
 ## Korean Number system
 
 - 하나 = 1

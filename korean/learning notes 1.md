@@ -103,8 +103,9 @@ These are in 존댓말.
 - 고맙습니다 = Thank you
 - 죄송합니다 = Sorry (Apologetic)
   - 죄송 = Apology
-- 저기요 = Excuse me
+- 저기요 = Excuse me (Hey there!)
   - 저기 = Hey there
+- 실례합니다 = Excuse me (usage as 请问, Qǐngwèn)
 - 만나서 반가워요 = Nice to meet you
   - 만나서 = To meet 
   - 반가워요 = Nice to meet you (This one is more casual than the full one)
