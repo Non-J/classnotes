@@ -20,3 +20,9 @@ created: 1646396029738
 - 얼마나 = How (much/many)
 - 얼마 = How much (money)
 - 몇 = How many (used with counting unit) ^0ci752g8q2vf
+
+### Examples
+
+네가 어느 나라 사람이에요?
+![[vocabularies#^77j10d21jj72:#*]]
+![[Vocabularies|vocabularies#^5yl465nh7a19]]
