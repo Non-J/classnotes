@@ -2,7 +2,7 @@
 id: z59mx244uru65nc7ts2k6r8
 title: Questions
 desc: ''
-updated: 1646396090117
+updated: 1650090246310
 created: 1646396029738
 ---
 
@@ -24,5 +24,5 @@ created: 1646396029738
 ### Examples
 
 네가 어느 나라 사람이에요?
-![[vocabularies#^77j10d21jj72:#*]]
-![[Vocabularies|vocabularies#^5yl465nh7a19]]
+![[Korean.Vocabularies#^77j10d21jj72:#*]]
+![[Korean.Vocabularies#^5yl465nh7a19]]

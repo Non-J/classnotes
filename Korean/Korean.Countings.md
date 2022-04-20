@@ -58,5 +58,5 @@ created: 1646393743934
 ### Examples
 
 가족이 몇 명이에요?
-![[questions#^0ci752g8q2vf]]
-![[vocabularies#^fg5ka7uf3kyu]]
+![[Korean.Questions#^0ci752g8q2vf]]
+![[Korean.Vocabularies#^fg5ka7uf3kyu]]

@@ -22,7 +22,7 @@ commands:
 workspace:
     vaults:
         -
-            fsPath: korean
+            fsPath: Korean
         -
             fsPath: vault
     journal:
@@ -81,26 +81,30 @@ publishing:
     enableMermaid: true
     enablePrettyRefs: true
     enableKatex: true
-    copyAssets: true
-    siteHierarchies:
-        - root
-    writeStubs: false
-    siteRootDir: docs
-    seo:
-        title: Dendron
-        description: Personal Knowledge Space
-    github:
-        enableEditLink: true
-        editLinkText: Edit this page on GitHub
-        editBranch: main
-        editViewMode: tree
-    enableSiteLastModified: true
+    enableSiteLastModified: false
     enableFrontmatterTags: true
     enableHashesForFMTags: false
     enableRandomlyColoredTags: true
     enablePrettyLinks: true
+    copyAssets: true
+    siteHierarchies:
+        - index
+        - Korean
+        - MAS250
+        - CS230
+    writeStubs: false
+    siteRootDir: docs
+    seo:
+        title: Dendron Notes
+        description: Published Dendron Notes
+        author: Jirawut Thongraar
+    github:
+        enableEditLink: false
+        editLinkText: Edit this page on GitHub
+        editBranch: main
+        editViewMode: tree
     duplicateNoteBehavior:
         action: useVault
         payload:
             - vault
-            - korean
+            - Korean

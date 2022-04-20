@@ -2,7 +2,7 @@
 id: 9g4uatuq1yds2ciz6sf1uwk
 title: Overview
 desc: ''
-updated: 1646393544229
+updated: 1650091250951
 created: 1646392187901
 ---
 
@@ -30,7 +30,7 @@ created: 1646392187901
 | kʰ  | ㅋ      | ข           |
 | l/r | ㄹ      | ล           |
 
-[^tensed]: Tensed pronunciation. Exert greater muscular effort or constriction and plain pronunciation.
+[^tensed]: Tensed pronunciation. Exert greater muscular effort or constriction than plain pronunciation.
 
 ## Vowels
 

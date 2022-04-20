@@ -1,9 +1,17 @@
 {
     "cSpell.words": [
+        "bigg",
+        "binom",
+        "Chebyshev",
         "dendron",
         "frontmatter",
-        "katex",
         "hangeul",
+        "Immediates",
+        "infty",
+        "Jirawut",
+        "katex",
+        "Memoryless",
+        "Thongraar"
     ],
     "dendron.rootDir": ".",
     "pasteImage.path": "${currentFileDir}/assets/images",
@@ -13,6 +21,7 @@
         "MD025": {
             "front_matter_title": "",
         },
+        "MD033": false,
     },
     "editor.snippetSuggestions": "inline",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
