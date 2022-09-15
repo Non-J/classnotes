@@ -2,13 +2,32 @@
 id: fjxu6pm2m5c9gmlv02qteay
 title: Supports
 desc: ''
-updated: 1646396422301
+updated: 1662381300606
 created: 1646396413672
 ---
 
+## Sprinkles
+
+- 근데 = But
+- 꼭 = Certainly, Surely, แน่นอน, ต้อง
+- 물론 = Of course
+  - 물론이죠 = Sure! Of course!
+- 참 = Really, Truely, Indeed, ทีเดียว, จริงๆ, 정말로
+- 글쎄 = Well, นั่นซิ
+- 아무 = Any
+- 게다가 = in addition, furthermore, moreover, นอกจากนั้น, ยิ่งกว่านั้น
+- 다시 = Again, อีกครั้ง
+- 먼저 = First, First of all, To start, อันดับแรก
+- 아직 = yet, still
+- 벌써 = Already (sooner than expected)
+- 이미 = Already (previously)
+- 혹시 = Maybe, By chance, Perhaps, ถ้าหาก
+- 다 = All, ทั้งหมด
+
 ## Scale
 
-- 조금, 약간 = little, a bit
+- 조금 = little, a bit, เล็กน้อย
+- 약간 = little, bit, slightly, นิดหน่อย
 - 매우, 아주, 굉장히 = very
 - 너무 = too, so, overly
 - 진짜/정말 = really, truly
@@ -17,12 +36,14 @@ created: 1646396413672
 
 ## Frequency
 
-- 항상 = always
+- 항상/언제나 = always
 - 보통 = usually
 - 자주/종종 = often
 - 가끔/가끔씩/ = sometimes
 - 어쩌다 한번씩 = rarely/once in a while
+- 거의 [...]지 않다 = hardly
 - 절대 = never (sentence form must be negative)
+- 전혀 [...]지 않다 = never
 
 ## Relative Time
 
@@ -34,8 +55,41 @@ created: 1646396413672
 - 오늘 = today
 - 어제 = yesterday
 - 내일 = tomorrow
+- 하루 = One day
 
-- 이미, 벌써 = Already
+- 아까 = A while ago
+- 이따가 = In a little while
+- 나중에 = Later
+- 최근 = Recently
+
+- 방금 = Just, A moment ago, เพิ่ง, เมื่อสักครู่
+- 금방 = Soon, อีกสักครู่
+
+- 오래 = Long (time)
+  - 오랜만에 = in (after) a long time
+  - 오래전에 = long time ago
+  - 오랜만이에요 = Long time no see
+
+- 월요일 = Monday
+- 화요일 = Tuesday
+- 수요일 = Wednesday
+- 목요일 = Thursday
+- 금요일 = Friday
+- 토요일 = Saturday
+- 일요일 = Sunday
+
+## Time of Day
+
+- 자정 = Midnight
+- 새벽 = Dawn
+- 아침 = Morning
+- 오전 = Morning time
+- 정오 = Noon
+- 낮 - day, กลางวัน
+- 오후 = Afternoon time
+- 점심 = Lunchtime
+- 저녁 = Evening
+- 밤 = Night
 
 ## Relative Position
 
@@ -51,6 +105,12 @@ created: 1646396413672
 - 그곳 = That place
 - 저곳 = That place
 
+- 북쪽 = North
+- 남쪽 = South
+- 동쪽 = East
+- 서쪽 = West
+- 똑바로 = Straight, In a stright line, Honestly, ตรง, ซื่อตรง
+
 ## Prepositions
 
 - 안 = In
@@ -62,6 +122,6 @@ created: 1646396413672
 - 뒤 = Back
 - A 와/과 B 사이 = Between
 - 건너편/맞은편 = Across/Opposite
-- 근처 = Near
+- 근처 = Near, Nearby, Closeby
 - 왼쪽 = Left
 - 오른쪽 = Right

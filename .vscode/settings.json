@@ -1,8 +1,10 @@
 {
     "cSpell.words": [
+        "ANOVA",
         "bigg",
         "binom",
         "Chebyshev",
+        "Cond",
         "dendron",
         "frontmatter",
         "hangeul",
@@ -18,6 +20,9 @@
     "pasteImage.prefix": "/",
     "markdownlint.config": {
         "default": true,
+        "MD024": {
+            "allow_different_nesting": true
+        },
         "MD025": {
             "front_matter_title": "",
         },

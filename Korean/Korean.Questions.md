@@ -2,7 +2,7 @@
 id: z59mx244uru65nc7ts2k6r8
 title: Questions
 desc: ''
-updated: 1650090246310
+updated: 1662377372373
 created: 1646396029738
 ---
 
@@ -15,6 +15,7 @@ created: 1646396029738
   - 부터 = From
   - 까지 = To
 - 왜 = Why
+- 어떤 = What, Which, แบบไหน (ลักษณะหรือรูปแบบ)
 - 어떻게 = How (to do something)
 - 어때요 = How (feelings)
 - 얼마나 = How (much/many)

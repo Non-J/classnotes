@@ -2,7 +2,7 @@
 id: rec0qdprx67aqz2rykt3ily
 title: Countings
 desc: ''
-updated: 1646807678549
+updated: 1662381010374
 created: 1646393743934
 ---
 
@@ -54,6 +54,31 @@ created: 1646393743934
 - 번 = Number/Times (e.g., 한번 = Once)
 - 등 = Ranking
 - 급 = Grade/Class
+- 층 = Floor
+- 쪽 = Book page
+
+## Bounds
+
+- 이상 = Above, More than, มากกว่า (Usage: postfix)
+- 이하 = Below, Less than, น้อยกว่า (Usage: postfix)
+- 미만 = Less than, Younger than, ไม่ถึง (Usage: postfix)
+- 최대(大) = Biggest, Maximum (Usage: prefix)
+- 최대(少) = Least, Minumum (Usage: prefix)
+- 쯤 = Around, Approximately (Usage: postfix)
+- 약  = Around, Approximately (Usage: prefix)
+- 약  = A little less than (Usage: postfix)
+- 정도 = About, Level, Degree (Usage, postfix)
+  - Example: "30분 정도" means about 30 minutes
+  - Example: "5분 정도의 간격으로" means around every 5 minutes
+  - Example: "매일 먹을 수 있을 정도로 맛있어요" means "can eat everyday level of delicious"
+- 당 = Per, Per unit (Usage: postfix)
+  - Example: "10g당 77원" means 77KRW per 10g
+
+## Miscellaneous
+
+- 지하 = Underground (Used for floor numbering)
+- 점 = Point, Dot, จุด (Used for decimal point)
+- 이래 = Since, From (Used for year)
 
 ### Examples
 

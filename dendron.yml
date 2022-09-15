@@ -66,6 +66,7 @@ workspace:
     enableEditorDecorations: true
     maxPreviewsCached: 10
     maxNoteLength: 204800
+    enableFullHierarchyNoteTitle: false
 preview:
     enableFMTitle: true
     enableNoteTitleForLink: true
@@ -94,6 +95,7 @@ publishing:
         - CS230
     writeStubs: false
     siteRootDir: docs
+    siteUrl: https://blossom.jirawut.com/notes/
     seo:
         title: Dendron Notes
         description: Published Dendron Notes

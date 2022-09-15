@@ -2,7 +2,7 @@
 id: pdkwss0u270ux2bwxnx0zpw
 title: Structures
 desc: ''
-updated: 1646545205670
+updated: 1650853249545
 created: 1646392615237
 ---
 
@@ -32,11 +32,24 @@ created: 1646392615237
 
 ## Comparison
 
-### More/Less
+### Relative
 
-### Most/Least
+- 더 = More
+- Use 보다
+  - 태국은 한국보다 더 덥다.
 
-### Same/Equal
+### Superlative
+
+- 가장 = most
+- 제일 = first (most)
+
+### Equality
+
+- 같다 = To be same/similar.
+  - A는 B하고 같다.
+
+- 다르다 = To be different.
+  - A는 B하고 다르다.
 
 ## Unsorted
 
