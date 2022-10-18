@@ -18,7 +18,9 @@ commands:
         enableMultiSelect: false
     insertNoteIndex:
         enableMarker: false
-    copyNoteLink: {}
+    copyNoteLink:
+        aliasMode: title
+    templateHierarchy: template
 workspace:
     vaults:
         -
@@ -54,8 +56,12 @@ workspace:
             L: low
         todoIntegration: false
         createTaskSelectionType: selection2link
+        taskCompleteStatus:
+            - done
+            - x
     graph:
         zoomSpeed: 1
+        createStub: false
     enableAutoCreateOnDefinition: false
     enableXVaultWikiLink: false
     enableRemoteVaultInit: true
@@ -72,14 +78,12 @@ preview:
     enableNoteTitleForLink: true
     enableFrontmatterTags: true
     enableHashesForFMTags: false
-    enableMermaid: true
     enablePrettyRefs: true
     enableKatex: true
     automaticallyShowPreview: false
 publishing:
     enableFMTitle: true
     enableNoteTitleForLink: true
-    enableMermaid: true
     enablePrettyRefs: true
     enableKatex: true
     enableSiteLastModified: false
@@ -93,6 +97,7 @@ publishing:
         - Korean
         - MAS250
         - CS230
+        - MAS102
     writeStubs: false
     siteRootDir: docs
     siteUrl: https://blossom.jirawut.com/notes/
@@ -110,3 +115,5 @@ publishing:
         payload:
             - vault
             - Korean
+    enableTaskNotes: true
+    searchMode: lookup
