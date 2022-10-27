@@ -2,7 +2,7 @@
 id: 4konbd2lr13mjqmv6qzb8nb
 title: Phrases
 desc: ''
-updated: 1662375843055
+updated: 1666603278708
 created: 1646392570625
 ---
 
@@ -44,6 +44,10 @@ created: 1646392570625
   - 아무래도 = อย่างไรก็
 - 그렇구나, 그렇군요 = I see...
 - 알겠다 = I got it.
+- 물론이지! = Of course!
+- 배고프다 = Hungry
+- 배부르다 = Full
+- 목마르다 = Thirsty
 
 ## Clothes
 

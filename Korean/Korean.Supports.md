@@ -2,7 +2,7 @@
 id: fjxu6pm2m5c9gmlv02qteay
 title: Supports
 desc: ''
-updated: 1662381300606
+updated: 1666779069603
 created: 1646396413672
 ---
 
@@ -19,10 +19,16 @@ created: 1646396413672
 - 다시 = Again, อีกครั้ง
 - 먼저 = First, First of all, To start, อันดับแรก
 - 아직 = yet, still
+- 여태 = Still, So far, จนถึงตอนนี้
 - 벌써 = Already (sooner than expected)
 - 이미 = Already (previously)
 - 혹시 = Maybe, By chance, Perhaps, ถ้าหาก
 - 다 = All, ทั้งหมด
+- 평소에 = usually, ordinarily
+- 및 = and
+- 미리 = In advance, Before hand, Ahead of time
+- 그냥 = Just, แค่, เฉยๆ
+- 마침 = just in time, พอดี
 
 ## Scale
 
@@ -33,37 +39,41 @@ created: 1646396413672
 - 진짜/정말 = really, truly
 - 굉장히 = extremely, absolutely
 - 꽤 - quite, rather, fairly
+- 유난히 = particularly, especially
 
-## Frequency
+## Frequency and Time
 
 - 항상/언제나 = always
 - 보통 = usually
 - 자주/종종 = often
-- 가끔/가끔씩/ = sometimes
-- 어쩌다 한번씩 = rarely/once in a while
-- 거의 [...]지 않다 = hardly
-- 절대 = never (sentence form must be negative)
-- 전혀 [...]지 않다 = never
-
-## Relative Time
+- 가끔/가끔씩 = sometimes
+- 자꾸 = Repeatedly
+- 거의 [...]지 않다 = hardly [[Vocabularies|Korean.Vocabularies#^5gl3hslihhy0]]
+- 전혀 [...]지 않다 = never [[Vocabularies|Korean.Vocabularies#^zcshqibfbgwd]]
+- 절대 [...]지 않다 = never
 
 - 이제 = now (this time)
 - 지금 = now
 - 요새/요즘 = recently, nowadays
+- 아까 = A while ago
+- 이따가 = In a little while (should be within the day)
+- 나중에 = Later
+- 방금 = Just, A moment ago, เพิ่ง, เมื่อสักครู่
+- 막 = just, 방금
+- 금방 = Soon, อีกสักครู่
+- 최근 = Recently
+- 갑자기 = Suddenly
+- 정기적으로 = Regularly
+- 언제나 = Always, whenever, เมื่อไหร่ก็ตาม
+- 어쩌다 한번씩 = rarely/once in a while
+- 일찍 = Early
+- 늦게 = Late, from 늦다
 
 - 매일 = everyday
 - 오늘 = today
 - 어제 = yesterday
 - 내일 = tomorrow
 - 하루 = One day
-
-- 아까 = A while ago
-- 이따가 = In a little while
-- 나중에 = Later
-- 최근 = Recently
-
-- 방금 = Just, A moment ago, เพิ่ง, เมื่อสักครู่
-- 금방 = Soon, อีกสักครู่
 
 - 오래 = Long (time)
   - 오랜만에 = in (after) a long time
