@@ -12,7 +12,7 @@ created: 1646396413672
 - 꼭 = Certainly, Surely, แน่นอน, ต้อง
 - 물론 = Of course
   - 물론이죠 = Sure! Of course!
-- 참 = Really, Truely, Indeed, ทีเดียว, จริงๆ, 정말로
+- 참 = Really, Truly, Indeed, ทีเดียว, จริงๆ, 정말로
 - 글쎄 = Well, นั่นซิ
 - 아무 = Any
 - 게다가 = in addition, furthermore, moreover, นอกจากนั้น, ยิ่งกว่านั้น

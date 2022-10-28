@@ -2,7 +2,7 @@
 id: gn0zy5bmrf8ep9ccl3upz71
 title: Vocabularies
 desc: ''
-updated: 1666844222173
+updated: 1666970915880
 created: 1646392589456
 ---
 
@@ -77,7 +77,7 @@ created: 1646392589456
 - 심정 = Feelings, Heart, ความรู้สึก, อารมณ์
 - 감정 = [感情] ความรู้สึก, อารมณ์, [憾情] ความไม่พอใจ, ความไม่พึงพอใจ, ความโกรธเคือง, ความขุ่นเคือง
 - 마음 = Mind, Heart, ใจ, จิตใจ
-  - 마음에 드는 = Favorite
+  - 마음에 드는 = Favorite (from 들다)
 - 화나다 = Angry, โกรธ
 - 행복하다 = Happy, มีความสุข
 - 슬퍼하다 = Sad, เศร้า
@@ -404,12 +404,12 @@ created: 1646392589456
 - 떨어지다 = Drop, Fall
 - 모자라다 = Short of, Insufficient, ขาดแคลน
 - 동나다 = Run out of, Be out of stock
-- 없어지다 = Be gone, dissappeared (passive)
+- 없어지다 = Be gone, disappeared (passive)
 - 일반 = Regular, Common
 - 비밀 = Secret, ความลับ
 - 공유 = Sharing
   - 공유하다 = Share
-- 휴가 = Vacation, Holliday
+- 휴가 = Vacation, Holiday
 - 휴일 = Holiday, day off
 - 휴무 = Close, Break
 - 방학 = School break

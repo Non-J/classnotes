@@ -63,7 +63,7 @@ created: 1646393743934
 - 이하 = Below, Less than, น้อยกว่า (Usage: postfix)
 - 미만 = Less than, Younger than, ไม่ถึง (Usage: postfix)
 - 최대(大) = Biggest, Maximum (Usage: prefix)
-- 최대(少) = Least, Minumum (Usage: prefix)
+- 최대(少) = Least, Minimum (Usage: prefix)
 - 쯤 = Around, Approximately (Usage: postfix)
 - 약  = Around, Approximately (Usage: prefix)
 - 약  = A little less than (Usage: postfix)
