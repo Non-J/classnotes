@@ -16,6 +16,11 @@
         "syscall",
         "Thongraar"
     ],
+    "cSpell.ignoreRegExpList": [
+        "/\\p{Script=Thai}+/u",
+        "/\\^\\w+/",
+        "/id:\\s*\\w*/"
+    ],
     "dendron.rootDir": ".",
     "pasteImage.path": "${currentFileDir}/assets/images",
     "pasteImage.prefix": "/",
