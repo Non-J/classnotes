@@ -1,6 +1,8 @@
 {
     "cSpell.words": [
         "ANOVA",
+        "arccos",
+        "arctan",
         "bigg",
         "binom",
         "Chebyshev",
@@ -37,5 +39,6 @@
     "editor.snippetSuggestions": "inline",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggest.showSnippets": true,
-    "editor.tabCompletion": "on"
+    "editor.tabCompletion": "on",
+    "editor.wordWrap": "off"
 }
