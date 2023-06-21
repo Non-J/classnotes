@@ -24,7 +24,7 @@ A transformation has the following effect on normal:
 $$
 \begin{bmatrix}nx'\\ny'\\nz'\end{bmatrix}=(L^{-1})^T\begin{bmatrix}nx\\ny\\nz\end{bmatrix}
 $$
-Note that the translation part has no effect, just the linear part. 
+Note that the translation part has no effect, just the linear transformation part. 
 If $L$ is rotation, then $(L^{-1})^T=L$ (property of orthonormal linear transformation).
 
 ## Frame
@@ -89,7 +89,7 @@ q=\cos(\theta/2)+\sin(\theta/2)(x\hat i+y\hat j+z\hat k)
 $$
 where $x$, $y$, and $z$ are the normalized rotation axis. Note that for all rotation related stuff, the assumption is that everything is normalized.
 
-For each rotation, there are 2 corresponding quaternion: $q$ and $-q$. This is because for every rotation, you can either rotate around an axis $r$ by $\theta$ or rotate around $-r$ by $-\theta$.
+For each rotation, there are 2 corresponding quaternions: $q$ and $-q$. This is because for every rotation, you can either rotate around an axis $r$ by $\theta$ or rotate around $-r$ by $-\theta$.
 
 Applying the rotation on a point $p=x\hat i+y\hat j+z\hat k$ (real part is 0), the output $p'$ is
 $$
@@ -129,9 +129,9 @@ $$
 
 Sphere-based SLERP:
 $$
-\frac{\sin((1-t)\Omega)}{\sin(\Omega)}q_0+\frac{\sin(t\Omega)}{\sin(\Omega)}q_1
+\frac{\sin((1-t)\Omega)}{\sin(\Omega)}v_0+\frac{\sin(t\Omega)}{\sin(\Omega)}v_1
 $$
-where $\Omega$ is the angle between $q_0$ and $q_1$, that is $\Omega=\arccos(v_0\cdot v_1)$.
+where $\Omega$ is the angle between $v_0$ and $v_1$, that is $\Omega=\arccos(v_0\cdot v_1)$.
 
 # Bezier Curve and Spline
 
@@ -181,7 +181,7 @@ B_{i,n}(t)={n\choose i}(1-t)^{n-i}t^i
 $$
 Properties:
 - Curve is contained by the convex hull of control points
-- Variation Diminishing: number of intersections of a straight line with a Bezier curve is at most the number of intersections of the same line  with the convex hull
+- Variation Diminishing: number of intersections of a straight line with a Bezier curve is at most the number of intersections of the same line with the convex hull
 - Affine Invariance: applying affine transform to control points applies it to whole curve
 
 ## Polar Form
@@ -245,7 +245,7 @@ P_2&=C_1-\frac{1}{6}(C_2-C_0)\\
 https://www.researchgate.net/figure/An-example-of-a-Catmull-Rom-spline_fig1_50838845
 
 Catmull-Rom is a type of Cardinal spline, and Cardinal spline is a type of Hermite spline.
-- A Hermite spline is a spline where a point and velocity is supplied. Hermite splines with only outgoing velocity are $C^1$ continuity
+- A Hermite spline is a spline where points and velocity are supplied. Hermite splines with only outgoing velocity are $C^1$ continuity
 - A Cardinal spline is a Hermite spline where the velocity at $P_i$ is set by $\tau(P_{i+1}-P_{i-1})$
 - Catmull-Rom spline is a Cardinal spline with $\tau=0.5$
 For general Hermite spline, divide the velocity by 3 and mirror(copy) that around the control point to get the cubic Bezier point.
@@ -270,8 +270,63 @@ For Cubic Bezier spline:
 $$
 G^k:\ \frac{d^i}{dt^i}(F(t))=\frac{d^i}{dt^i}(G(a(t))) ,\ \forall i\le k
 $$
-Only check the shape. The $a(t)$ part re-parameterize so that the velocity of $G$ can match that of $F$.
+Only check the shape. The $a(t)$ part re-parameterize so that the continuity doesn’t depend on parameterization.
 - $G^0$ means connected
 - $G^1$ means there's no sharp corner. Tangent continuity (the tangent unit vector is continuous)
 - $G^2$ means curvature is continuous
 - $C^k$ continuity implies $G^k$ continuity as long as the curve doesn't stop (have velocity of 0)
+
+# Geometry of Rasterization
+
+## Homogeneous Coordinates
+
+A system where $(x,y,w)=(kx,ky,kw)$ for $k\neq 0$. To convert to regular coordinates, divides all components by $w$: $(x,y,z)=(x/w,y/w,1)$.
+The point $(0,0,0)$ is invalid point. 
+Points with $w=0$ are considered to be at infinity. There is only one infinity point for each direction: $(x,y,0)=(kx,ky,0)$.
+
+Line is $ax+by+cw=0$. The line $0x+0y+cw=0$ hits all infinity points, and this is the only line that does so.
+
+Every 2 distinct lines intersect at unique point (maybe infinity)
+
+## Rendering Pipeline
+
+Object → Eye → Clip → NDC (Normalized device coordinates) → Window
+
+Object → Eye: Use camera position/rotation and apply the inverse the the whole world. The camera is now at the origin and the coordinates of other objects move accordingly.
+
+Eye → Clip: Projection matrix. Vertex that falls outside a certain range is clipped off. The clip coordinates is homogeneous coordinates that is the return result of vertex shaders.
+
+Clip → NDC: Divides by $w$ according to homogeneous coordinates.
+
+NDC → Window: Project the NDC by x,y coordinates and scales it to fit window.
+
+## Shadow Mapping
+
+Shadow mapping can be done by rendering the depth buffer from the light source's perspective. For the final pass, check the pixel's distance to light and the depth buffer. If they are equal, they are in light, otherwise they are in shadow.
+
+## Discrete Sampling
+
+Anti-aliasing:
+$$
+I[i][j]=\iint I(x,y)F_{i,j}(x,y)dxdy
+$$
+where $F$ is called a filter.
+
+Super sampling: many points are sampled
+Multi sampling: internally renders at higher resolution and downscale for final image
+
+Nyquist theorem: if a function $f$ has no frequency higher than $B$ Hz, the sampling rate $2B$ Hz is sufficient.
+
+# Color and Light
+
+Let $(k_s(\lambda),k_m(\lambda),k_l(\lambda))$ be the coordinate representing short/medium/long eye cone cell's sensitivity to wavelength $\lambda$. For a mixed wavelength light $l(\lambda)$, it is:
+$$
+(\int l(\lambda)k_s(\lambda)d\lambda,\int l(\lambda)k_m(\lambda)d\lambda,\int l(\lambda)k_l(\lambda)d\lambda)
+$$
+## Color Matching
+
+Given a light of wavelength $\lambda$, find the values of $k_{435}(\lambda),k_{545}(\lambda),k_{645}(\lambda)$ such that the mixed light created by these primary colors matched the original light. 
+$$
+c(l)=\begin{bmatrix}c(435)&c(545)&c(645)\end{bmatrix}\begin{bmatrix}\int l(\lambda)k_{435}(\lambda)d\lambda \\ \int l(\lambda)k_{545}(\lambda)d\lambda \\ \int l(\lambda)k_{645}(\lambda)d\lambda\end{bmatrix}
+$$
+This is a linear color space. Alternate color space is also possible, including non-linear color space.
